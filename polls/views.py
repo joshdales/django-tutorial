@@ -7,8 +7,8 @@ def index(request):
     output = ', '.join([q.question_text for q in latest_question_list])
     return HttpResponse(output)
 
-def index(request):
-    return HttpResponse("Hello world. You are at the polls index")
+# def index(request):
+#     return HttpResponse("Hello world. You are at the polls index")
 
 def detail(request, question_id):
     return HttpResponse("You're looking at question %s" % question_id)
